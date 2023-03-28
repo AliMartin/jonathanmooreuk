@@ -1,0 +1,31 @@
+uuid: 99617480-6ad6-4b6b-b1bd-ce326e6a41a0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2530d66c-f4b6-44a8-aa1d-54067c1dccbf'
+  module:
+    - block_content
+    - system
+  theme:
+    - jmoore
+id: linkedin
+theme: jmoore
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:2530d66c-f4b6-44a8-aa1d-54067c1dccbf'
+settings:
+  id: 'block_content:2530d66c-f4b6-44a8-aa1d-54067c1dccbf'
+  label: LinkedIn
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

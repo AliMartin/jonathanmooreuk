@@ -1,0 +1,122 @@
+uuid: 312df0aa-4de2-4427-b140-e19f9f0f3dbd
+langcode: en
+status: false
+dependencies:
+  module:
+    - custom_search
+  theme:
+    - jmoore
+id: customsearchform
+theme: jmoore
+region: top_right
+weight: -8
+provider: null
+plugin: custom_search
+settings:
+  id: custom_search
+  label: 'Custom Search form'
+  label_display: '0'
+  provider: custom_search
+  search_box:
+    label_visibility: false
+    label: 'Search this site'
+    placeholder: 'Search this site'
+    title: 'Enter the terms you wish to search for'
+    size: 15
+    max_length: 128
+    weight: -9
+    region: block
+  submit:
+    text: Search
+    image_path: ''
+    weight: 9
+    region: block
+  content:
+    page: node_search
+    types:
+      article: '0'
+      slideshow: '0'
+      testimonial: '0'
+    other:
+      user_search: '0'
+    selector:
+      type: select
+      label_visibility: true
+      label: 'Search for'
+    any:
+      text: '- Any -'
+      restricts: false
+      force: false
+    excluded:
+      article: '0'
+      slideshow: '0'
+      testimonial: '0'
+    weight: -8
+    region: block
+  taxonomy:
+    node_search:
+      type: disabled
+      depth: 0
+      label_visibility: true
+      label: Content
+      all_text: '- Any -'
+      weight: -7
+      region: block
+    user_search:
+      type: disabled
+      depth: 0
+      label_visibility: true
+      label: Users
+      all_text: '- Any -'
+      weight: -6
+      region: block
+    tags:
+      type: disabled
+      depth: null
+      label_visibility: false
+      label: ''
+      all_text: '- Any -'
+      weight: null
+      region: null
+  criteria:
+    or:
+      display: false
+      label: 'Containing any of the words'
+      weight: 4
+      region: block
+    phrase:
+      display: false
+      label: 'Containing the phrase'
+      weight: 5
+      region: block
+    negative:
+      display: false
+      label: 'Containing none of the words'
+      weight: 6
+      region: block
+  languages:
+    languages:
+      current: '0'
+      en: '0'
+      und: '0'
+      zxx: '0'
+    selector:
+      type: select
+      label_visibility: true
+      label: Languages
+    any:
+      text: '- Any -'
+      restricts: false
+      force: false
+    weight: 7
+    region: block
+  paths:
+    selector:
+      type: select
+      label_visibility: true
+      label: 'Customize your search'
+    list: ''
+    separator: +
+    weight: 8
+    region: block
+visibility: {  }

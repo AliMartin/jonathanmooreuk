@@ -1,0 +1,29 @@
+uuid: d688f5c3-6c82-4b03-9bd3-2f9f0eda859a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:63f89b30-3bc5-4f8d-8152-9a4a3141a6c2'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - jmoore
+third_party_settings:
+  block_class:
+    classes: mobile-header
+id: mobileheader
+theme: jmoore
+region: top_bottom
+weight: 0
+provider: null
+plugin: 'block_content:63f89b30-3bc5-4f8d-8152-9a4a3141a6c2'
+settings:
+  id: 'block_content:63f89b30-3bc5-4f8d-8152-9a4a3141a6c2'
+  label: 'Mobile header'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,30 @@
+uuid: 0666e7cf-24d1-4091-b3ef-a29222bac1b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.director_reviews_menu
+  module:
+    - system
+    - views
+  theme:
+    - jmoore
+id: views_block__director_reviews_menu_block_2
+theme: jmoore
+region: sidebar_first
+weight: -11
+provider: null
+plugin: 'views_block:director_reviews_menu-block_2'
+settings:
+  id: 'views_block:director_reviews_menu-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/director\r\n/review/director/*"

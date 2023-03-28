@@ -1,0 +1,20 @@
+uuid: 6799289f-8051-434c-8105-514dd7a8c982
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jmoore
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: jmoore_page_title
+theme: jmoore
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

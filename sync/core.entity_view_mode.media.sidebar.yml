@@ -1,0 +1,10 @@
+uuid: 51512acc-c406-41ec-aa5a-fce1d5fc88ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.sidebar
+label: Sidebar
+targetEntityType: media
+cache: true

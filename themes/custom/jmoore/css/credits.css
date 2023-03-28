@@ -1,0 +1,55 @@
+.credit.block-views {
+  margin-bottom: 60px;
+}
+
+.credit.block-views h2.block-title {
+  color: #000;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.credit.block-views .view {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.credit.block-views .table > thead > tr > th,
+.credit.block-views .table > tbody > tr > td {
+  padding: 4px;
+  vertical-align: middle;
+}
+
+td.views-field-field-content-link {
+  text-transform: uppercase;
+}
+
+td.views-field-field-content-link a {
+  border: none !important;
+  text-decoration: none !important;
+}
+
+td.views-field-field-content-link a:hover {
+  text-decoration: underline !important;
+}
+
+td.views-field-field-content-link,
+td.views-field-field-character,
+td.views-field-field-director,
+td.views-field-field-company,
+td.views-field-field-venue {
+  white-space: normal !important;
+}
+
+#block-views-block-credit-directing-block-1 .view-header,
+#block-views-block-credit-writer-block-1 .view-header {
+  margin-bottom: 20px;
+}
+
+span.bp,
+span.wp,
+td.views-field-field-premier {
+  text-transform: uppercase;
+  color: #f30;
+  font-weight: 600;
+}

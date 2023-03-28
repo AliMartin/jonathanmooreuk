@@ -1,0 +1,14 @@
+/* Center align tabs */
+ul.tabs--primary {
+	width: 100%;
+	text-align: center;
+	float: inherit;
+	margin-bottom: 30px;
+}
+
+ul.tabs--primary li {
+	display: inline-block;
+	float: inherit;
+	text-transform: uppercase;
+}
+

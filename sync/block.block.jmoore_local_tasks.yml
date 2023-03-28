@@ -1,0 +1,22 @@
+uuid: 3770289f-7aa8-46ff-83ea-0b61f7d6134a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - jmoore
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: jmoore_local_tasks
+theme: jmoore
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

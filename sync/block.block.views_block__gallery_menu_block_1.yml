@@ -1,0 +1,30 @@
+uuid: e323fc1a-0d3a-4540-aa21-ab61f056b022
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.gallery_menu
+  module:
+    - system
+    - views
+  theme:
+    - jmoore
+id: views_block__gallery_menu_block_1
+theme: jmoore
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:gallery_menu-block_1'
+settings:
+  id: 'views_block:gallery_menu-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/gallery/*'

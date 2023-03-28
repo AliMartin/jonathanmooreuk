@@ -1,0 +1,32 @@
+uuid: 7188f802-242a-4ef3-a658-5b8e7ffb64fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.testimonials_menu
+  module:
+    - ctools
+    - views
+  theme:
+    - jmoore
+id: views_block__testimonials_menu_block_1
+theme: jmoore
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'views_block:testimonials_menu-block_1'
+settings:
+  id: 'views_block:testimonials_menu-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      testimonial: testimonial
