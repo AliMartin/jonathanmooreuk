@@ -1,0 +1,15 @@
+maxlength_block_class_field: 255
+field_type: multiple_textfields
+default_case: standard
+allow_only_letters_and_numbers: false
+block_classes_stored: '{"testimonial-jump-menu":"testimonial-jump-menu","sidebar-images":"sidebar-images","news-headline":"news-headline","credit":"credit","site-title-block":"site-title-block","search-icon":"search-icon","mobile-header":"mobile-header","hyperluminal":"hyperluminal"}'
+enable_attributes: true
+enable_auto_complete: true
+qty_classes_per_block: 10
+items_per_page: 50
+enable_special_chars: true
+qty_attributes_per_block: 10
+enable_id_replacement: true
+weight_attributes: null
+weight_class: null
+weight_id: null

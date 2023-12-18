@@ -7,22 +7,26 @@
  * Place your custom PHP code in this file.
  */
 
-
-function jmoore_theme_registry_alter(&$theme_registry) {
-  if (isset($theme_registry['item_list__search_results'])) {
-    $theme_registry['item_list__search_results']['template'] = 'custom-search-results';
-    $theme_registry['item_list__search_results']['path'] = drupal_get_path('theme', 'jmoore') . '/templates';
-    $theme_registry['item_list__search_results']['variables']['filter_position'] = FALSE;
-    $theme_registry['item_list__search_results']['variables']['filter'] = '';
-  }
-}
+/**
+ * function jmoore_theme_registry_alter(&$theme_registry) {
+ *  if (isset($theme_registry['item_list__search_results'])) {
+ *   $theme_registry['item_list__search_results']['template'] = 'custom-search-results';
+ *   $theme_registry['item_list__search_results']['path'] = drupal_get_path('theme', 'jmoore') . '/templates';
+ *   $theme_registry['item_list__search_results']['variables']['filter_position'] = FALSE;
+ *   $theme_registry['item_list__search_results']['variables']['filter'] = '';
+ * }
+ * }
+ */
 
 /**
  * Implements hook_theme_suggestions_page_alter().
  * https://befused.com/drupal/page-template-content-type
  */
-function jmoore_theme_suggestions_page_alter(array &$suggestions, array $variables) {
-  if ($node = \Drupal::routeMatch()->getParameter('node')) {
-    $suggestions[] = 'page__' . $node->bundle();
-  }
-}
+
+/**
+ * function jmoore_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+ *  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+ *    $suggestions[] = 'page__' . $node->bundle();
+ *  }
+ * }
+ */

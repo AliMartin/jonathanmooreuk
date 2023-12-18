@@ -48,7 +48,7 @@ options:
     randomize: false
     respondTo: window
     rtl: false
-    rows: 1
+    rows: 0
     slidesPerRow: 1
     slide: ''
     slidesToShow: 1

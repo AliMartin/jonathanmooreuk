@@ -29,7 +29,6 @@ content:
       overlay: ''
       title: ''
       vanilla: false
-      icon: ''
       layout: ''
       view_mode: default
       cache: 0
@@ -48,12 +47,13 @@ content:
       ratio: ''
       thumbnail_style: ''
       _uri: ''
-      breakpoints: {  }
-      sizes: ''
       grid_header: ''
       grid: null
       grid_medium: null
       grid_small: null
+      breakpoints: {  }
+      icon: ''
+      sizes: ''
       overridables:
         arrows: '0'
         autoplay: '0'

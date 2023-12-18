@@ -357,6 +357,7 @@ display:
           wrapper_class: item-list
           label_field: title
           url_field: view_node
+          new_window: false
           select_text: '- Select gallery -'
           select_label: ''
       row:
