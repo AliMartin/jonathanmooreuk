@@ -4,3 +4,4 @@ escape: true
 dependencies:
   config:
     - node.type.credit
+new_content_behavior: 1

@@ -11,7 +11,7 @@ third_party_settings:
 name: Review
 type: review
 description: 'Add a <em>review</em> tothe website.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false
