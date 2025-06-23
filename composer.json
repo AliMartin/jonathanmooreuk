@@ -39,7 +39,7 @@
         "drupal/backup_migrate": "^5.0",
         "drupal/better_exposed_filters": "^6.0",
         "drupal/blazy": "^2.4 | ^3.0",
-        "drupal/block_class": "^2.0",
+        "drupal/block_class": "^3.0",
         "drupal/bootstrap5": "^4.0",
         "drupal/bootstrap_layouts": "^5.3",
         "drupal/colorbox": "^2.1",
