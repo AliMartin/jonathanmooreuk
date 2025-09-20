@@ -4,17 +4,31 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.video.field_display_in_video_library
+    - field.field.media.video.field_media_image
     - field.field.media.video.field_media_video_file
+    - image.style.thumbnail
     - media.type.video
+  module:
+    - image
 _core:
   default_config_hash: kGv8YsopqHvzTzb7QTINWcv0fnNa5ZDQyZxpOQR2vro
 id: media.video.media_library
 targetEntityType: media
 bundle: video
 mode: media_library
-content: {  }
+content:
+  field_media_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
 hidden:
   created: true
+  field_display_in_video_library: true
   field_media_video_file: true
   name: true
   path: true

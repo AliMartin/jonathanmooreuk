@@ -8,31 +8,8 @@ dependencies:
     - field.field.node.article.field_sidebar_images
     - node.type.article
   module:
-    - ds
     - text
     - user
-third_party_settings:
-  ds:
-    layout:
-      id: ds_1col
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        classes:
-          layout_class: {  }
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        label: ''
-    regions:
-      ds_content:
-        - field_image
-        - body
-        - links
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.default

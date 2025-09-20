@@ -295,8 +295,9 @@ display:
       menu:
         type: normal
         title: Gallery
-        weight: -42
+        weight: -49
         menu_name: main
+        parent: 'menu_link_content:53c11451-97a9-4e8b-b541-78c48e869f03'
     cache_metadata:
       max-age: -1
       contexts:

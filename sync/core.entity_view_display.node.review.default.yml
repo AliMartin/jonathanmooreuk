@@ -5,13 +5,13 @@ dependencies:
   config:
     - field.field.node.review.body
     - field.field.node.review.field_attachments
+    - field.field.node.review.field_image
     - field.field.node.review.field_media_gallery
     - field.field.node.review.field_production
     - field.field.node.review.field_sidebar_images
     - field.field.node.review.field_talent
     - node.type.review
   module:
-    - ds
     - file
     - slick
     - text
@@ -26,58 +26,69 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_attachments:
     type: file_default
     label: above
     settings:
       use_description_as_link_text: true
-    third_party_settings:
-      ds:
-        ds_limit: ''
-    weight: 2
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_media_gallery:
     type: slick_media
     label: hidden
     settings:
       caption:
-        title: '0'
         alt: '0'
-      optionset: default
+        title: '0'
+      optionset: slideshow
       class: ''
-      id: ''
       image: ''
       link: ''
       overlay: ''
       title: ''
       vanilla: false
+      by_delta: -1
       layout: ''
-      view_mode: default
+      view_mode: slideshow
       cache: 0
-      current_view_mode: default
-      skin: ''
-      fx: ''
-      style: ''
+      admin_uri: '/admin/structure/types/manage/review/display?ajax_form=1&_wrapper_format=drupal_ajax'
+      use_lb: false
       background: false
       box_caption: ''
       box_caption_custom: ''
       box_media_style: ''
+      loading: ''
+      preload: false
       responsive_image_style: ''
+      use_theme_field: false
       box_style: ''
       image_style: ''
       media_switch: ''
       ratio: ''
       thumbnail_style: ''
-      _uri: ''
-      grid_header: ''
-      grid: null
-      grid_medium: null
-      grid_small: null
-      breakpoints: {  }
-      icon: ''
-      sizes: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+      svg_inline: false
+      svg_fill: false
+      svg_sanitize: true
+      svg_sanitize_remote: false
+      svg_hide_caption: false
+      svg_attributes: ''
+      skin: ''
       overridables:
         arrows: '0'
         autoplay: '0'
@@ -98,17 +109,22 @@ content:
       skin_dots: ''
       preserve_keys: false
       visible_items: null
-    third_party_settings:
-      ds:
-        ds_limit: ''
-    weight: 0
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_talent:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 5
     region: content
 hidden:
   field_production: true
   field_sidebar_images: true
-  field_talent: true

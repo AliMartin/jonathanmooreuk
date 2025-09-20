@@ -6,9 +6,9 @@ name: 'Jonathan Moore'
 mail: noreply@jonathanmooreuk.com
 slogan: ''
 page:
-  403: /node/1
-  404: /node/1
-  front: /node/1
+  403: /node/231
+  404: /node/231
+  front: /node/231
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

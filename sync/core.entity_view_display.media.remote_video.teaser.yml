@@ -4,6 +4,7 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.media.teaser
+    - field.field.media.remote_video.field_display_in_video_library
     - field.field.media.remote_video.field_media_oembed_video
     - media.type.remote_video
 _core:
@@ -23,6 +24,7 @@ content:
     region: content
 hidden:
   created: true
+  field_display_in_video_library: true
   name: true
   thumbnail: true
   uid: true

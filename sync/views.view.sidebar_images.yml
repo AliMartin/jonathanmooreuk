@@ -1,6 +1,6 @@
 uuid: 122e0884-c709-4142-98d0-f620387f18f2
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - field.storage.node.field_sidebar_images
