@@ -5,7 +5,7 @@
   /* from Bootstrap 4 utilities - replaced $theme-colors with $colors */
   @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
   /*!
-   * Bootstrap  v5.3.7 (https://getbootstrap.com/)
+   * Bootstrap  v5.3.8 (https://getbootstrap.com/)
    * Copyright 2011-2025 The Bootstrap Authors
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
@@ -38,6 +38,7 @@
   /* Testimonials */
   /* News page */
   /* Search results */
+  /* Hightlight panel */
   /*
   @media only screen and (min-width : 1199px) {
     #block-jm25-responsivemenumobileicon {
@@ -2270,6 +2271,10 @@ a > .ck-content code {
 .ck-content [type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
+}
+.ck-content [type=search]::-webkit-search-cancel-button {
+  cursor: pointer;
+  filter: grayscale(1);
 }
 .ck-content ::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -7668,6 +7673,7 @@ a > .ck-content code {
 .ck-content .spinner-grow,
 .ck-content .spinner-border {
   display: inline-block;
+  flex-shrink: 0;
   width: var(--bs-spinner-width);
   height: var(--bs-spinner-height);
   vertical-align: var(--bs-spinner-vertical-align);
@@ -13986,6 +13992,15 @@ a > .ck-content code {
   font-size: larger;
   margin-bottom: 10px;
 }
+.ck-content .highlight-panel {
+  background-color: #aa8b6b;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.ck-content .highlight-panel h4, .ck-content .highlight-panel .h4 {
+  margin: 0;
+}
 .ck-content header {
   position: relative;
   z-index: 99;
@@ -14092,6 +14107,10 @@ a > .ck-content code {
   font-size: x-large;
   letter-spacing: 1px;
   font-weight: 200;
+}
+.ck-content footer .credit {
+  letter-spacing: 1px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 .ck-content footer .text {

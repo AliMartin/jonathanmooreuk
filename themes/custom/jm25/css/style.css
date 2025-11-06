@@ -2104,7 +2104,7 @@ a.bg-gray-900:hover {
 }
 
 /*!
- * Bootstrap  v5.3.7 (https://getbootstrap.com/)
+ * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
@@ -2707,6 +2707,10 @@ legend + * {
 [type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
+}
+[type=search]::-webkit-search-cancel-button {
+  cursor: pointer;
+  filter: grayscale(1);
 }
 
 /* rtl:raw:
@@ -8443,6 +8447,7 @@ textarea.form-control-lg {
 .spinner-grow,
 .spinner-border {
   display: inline-block;
+  flex-shrink: 0;
   width: var(--bs-spinner-width);
   height: var(--bs-spinner-height);
   vertical-align: var(--bs-spinner-vertical-align);
@@ -15388,6 +15393,17 @@ body.path-search ol.search-results li h3, body.path-search ol.search-results li 
   margin-bottom: 10px;
 }
 
+/* Hightlight panel */
+.highlight-panel {
+  background-color: #aa8b6b;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.highlight-panel h4, .highlight-panel .h4 {
+  margin: 0;
+}
+
 header {
   position: relative;
   z-index: 99;
@@ -15499,6 +15515,10 @@ footer .tag {
   font-size: x-large;
   letter-spacing: 1px;
   font-weight: 200;
+}
+footer .credit {
+  letter-spacing: 1px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 footer .text {

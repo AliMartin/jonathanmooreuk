@@ -411,3 +411,16 @@ body.path-search {
     }
   }
 }
+
+
+/* Hightlight panel */
+.highlight-panel {
+  background-color: $brown;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+  h4 {
+    margin: 0;
+  }
+}
